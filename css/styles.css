@@ -1,0 +1,803 @@
+/* Set base font, text color, and background for the whole page */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #fff;
+}
+
+/* Remove default margin from all headings and paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/* Remove default padding and bullet points from lists */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Make all images block elements to remove spacing below them */
+img {
+    display: block;
+}
+
+/* Set a maximum width and horizontal padding, and center the container */
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Add a bottom border to the page header */
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+/* Header container with horizontal alignment */
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Navigation bar layout */
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo spacing */
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
+/* Shared style for both header and footer logos */
+.header-logo,
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+/* Color variation for the dark part of the logo */
+.header-logo .studio-black {
+    color: #2e2f42;
+}
+
+/* Color variation for the white part of the logo in the footer */
+.footer-logo .studio-white {
+    color: #f4f4fd;
+}
+
+/* Horizontal layout and spacing for navigation links */
+.nav-list {
+    display: flex;
+    gap: 40px;
+    }
+
+
+/* Style for navigation links */
+.nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+/* Hover and focus effects for navigation links */
+.nav-link:hover,
+.nav-link:focus {
+    color: #404bbf;
+}
+
+.nav-link-psevdo {
+    position: relative;
+    color: #404bbf;
+}
+
+.nav-link-psevdo::after {
+    content: "";
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    background-color: #404bbf;
+    left: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    bottom: -1px;
+}
+
+/* Align contact block to the right */
+.contacts {
+    font-style: normal;
+    margin-left: auto;
+}
+
+/* Horizontal layout and spacing for contact items */
+.contacts-lists {
+    display: flex;
+    gap: 40px;
+}
+
+/* Style for contact links (email and phone) */
+.contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover and focus effects for contact links */
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #404bbf;
+}
+
+/* Generic section padding */
+.section {
+    padding: 120px 0;
+}
+
+/* Hero section with dark background and custom padding */
+.section-title {
+    background-color: #2e2f42;
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+
+}
+
+/* Main title style in the hero section */
+.page-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto 48px;
+    max-width: 496px;
+}
+
+/* Style for the main call-to-action button */
+.button {
+    background: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover and focus effects for the button */
+.button:hover,
+.button:focus {
+    background: #404bbf;
+}
+
+/* Utility class to hide elements visually but keep them accessible */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Horizontal layout with spacing for the about section */
+.about-list {
+    display: flex;
+    gap: 24px;
+}
+
+/* Layout for each about item block */
+.about-item {
+    width: calc((100% - 72px) / 4);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Light background for the team section */
+.section-ourteam {
+    background-color: #f4f4fd;
+}
+
+/*svg 4 images*/
+
+.container-icon {
+    align-items: center;
+    display: flex; 
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px; 
+    margin-bottom: 8px; 
+    padding: 24px 100px;
+}
+
+.social-links-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links-svg {
+    fill: #f4f4fd;
+}
+
+    /* Shared style for section titles */
+.title-about,
+.title-ourteam,
+.title-portfolio {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize;
+}
+
+/* Subtitle style for team member names */
+.subtitle-ourteam {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+/* Subtitle style for about and portfolio sections */
+.subtitle-about,
+.subtitle-portfolio {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+/* Style for job titles under team member names */
+
+.ourteam-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+    margin-bottom: 8px;
+}
+
+/* Space below the team section title */
+.title-ourteam {
+    margin-bottom: 72px;
+}
+
+/* Horizontal layout for team members */
+.ourteam-list {
+    display: flex;
+    gap: 24px;
+}
+
+/* Style for each team member card */
+.ourteam-item {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+/* Container for team member text */
+.container-team {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Space below the portfolio title */
+.title-portfolio {
+    margin-bottom: 72px;
+}
+
+/* Responsive grid layout for portfolio items */
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+}
+
+/* Size of each portfolio item */
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.container-portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item:hover .text-image-portfolio {
+    transform: translate(0);   
+}
+
+.portfolio-item {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.text-image-portfolio {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background: #4d5ae5;
+    height: 100%;
+    padding: 40px 32px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Container around portfolio image description */
+.container-portfolio {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+/* Shared text style for about and portfolio descriptions */
+.text-about,
+.text-portfolio {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* Footer background and spacing */
+.page-footer {
+    background-color: #2e2f42;
+    padding: 100px 0;
+}
+
+.container-page-footer {
+    display: flex;
+    align-items: baseline;
+    max-width: 1158px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container-footer{
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 120px;
+    padding: 0;
+
+}
+.container-footer-media {
+    display: inline-block;
+    margin: 0;
+    padding: 0 80px 0 0;
+    
+}
+
+
+
+/* Footer logo positioning */
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+/* Footer paragraph text style */
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    max-width: 264px;
+}
+
+.text-footer-media {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.social-link:hover, .social-link:focus {
+    background-color: #404bbf;
+}
+
+.social-link-footer:hover, .social-link-footer:focus { 
+    background-color: #31d0aa;
+}
+
+.social-links-list-footer {
+    gap: 16px;
+    display: flex;
+}
+
+.container-footer-subscribe {
+    display: inline-block;
+    margin: 0;
+    padding: 0;    
+}
+
+
+.text-footer-subscribe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+    display: inline-block;
+} 
+
+.form-footer{
+    display: flex;
+    gap: 24px;
+}
+
+.footer-input {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    background: transparent;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    margin-right: 24px;
+}
+.footer-input::placeholder {
+    color: #ffffff;
+}
+
+.button-footer-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+
+    background: #4d5ae5;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Flex shrink is additionel! */
+.button-icon {
+    display: inline;
+    margin-left: 16px;
+    fill: #fff;
+    flex-shrink: 0;    
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    left: ;eft: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    pointer-events:auto;
+    visibility: visible;
+}
+
+.modal {
+position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    width: 408px;
+    min-height: 584px;
+    background-color: #fcfcfc;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12),
+        0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.modal-button-close {
+position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    fill: #2e2f42;
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button-close:hover, .modal-button-close:focus {
+    background-color: #404bbf;
+    fill: #fff;
+    border: none;
+}
+
+.icon-close {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-modal {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    padding-left: auto;
+    padding-right: auto;
+    margin-bottom: 16px;;
+}
+
+.form-wrapper {
+    margin-bottom: 8px;
+}
+
+.form-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-cont-input {
+    position: relative;
+}
+
+
+.form-input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding-left: 38px;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover,
+.form-input:focus {
+    border: 1px solid #4d5ae5
+}
+
+.form-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover + .form-icon, .form-input:focus + .form-icon {
+    fill: #4d5ae5;
+}
+
+.form-wrapper-comment {
+    margin-bottom: 16px;
+}
+
+.modal-textarea {
+    font-size: 12px;
+    line-height: 1.17;;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 120px;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+
+.modal-textarea:hover,
+.modal-textarea:focus {
+    border: 1px solid #4d5ae5
+}
+
+.model-cont-checkbox {
+    margin-bottom: 24px;
+}
+
+.label-checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.custom-checkbox {
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    height: 16px;
+    width: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-icon{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-checkbox:checked + .label-checkbox > .custom-checkbox{
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
+}
+
+.private-policy {
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+.button-modal-submit {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    border-color: transparent;
+    cursor: pointer;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
+}
+
+.button-modal-submit:hover, .button-modal-submit:focus {
+    background-color: #404bbf;
+    fill: #404bbf;
+}
