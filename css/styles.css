@@ -45,8 +45,8 @@ img {
 .page-header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /* Header container with horizontal alignment */
@@ -94,7 +94,7 @@ img {
 .nav-list {
     display: flex;
     gap: 40px;
-    }
+}
 
 
 /* Style for navigation links */
@@ -171,7 +171,7 @@ img {
 .section-title {
     background-color: #2e2f42;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -255,13 +255,13 @@ img {
 
 .container-icon {
     align-items: center;
-    display: flex; 
+    display: flex;
     justify-content: center;
     height: 112px;
     background-color: #f4f4fd;
     border: 1px solid #8e8f99;
-    border-radius: 4px; 
-    margin-bottom: 8px; 
+    border-radius: 4px;
+    margin-bottom: 8px;
     padding: 24px 100px;
 }
 
@@ -286,7 +286,7 @@ img {
     fill: #f4f4fd;
 }
 
-    /* Shared style for section titles */
+/* Shared style for section titles */
 .title-about,
 .title-ourteam,
 .title-portfolio {
@@ -352,8 +352,8 @@ img {
     align-items: center;
     background-color: #ffffff;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* Container for team member text */
@@ -388,7 +388,7 @@ img {
 }
 
 .portfolio-item:hover .text-image-portfolio {
-    transform: translate(0);   
+    transform: translate(0);
 }
 
 .portfolio-item {
@@ -442,18 +442,19 @@ img {
     padding-left: 15px;
 }
 
-.container-footer{
+.container-footer {
     display: inline-block;
     margin-left: 0;
     margin-right: 120px;
     padding: 0;
 
 }
+
 .container-footer-media {
     display: inline-block;
     margin: 0;
     padding: 0 80px 0 0;
-    
+
 }
 
 
@@ -483,11 +484,13 @@ img {
     display: inline-block;
 }
 
-.social-link:hover, .social-link:focus {
+.social-link:hover,
+.social-link:focus {
     background-color: #404bbf;
 }
 
-.social-link-footer:hover, .social-link-footer:focus { 
+.social-link-footer:hover,
+.social-link-footer:focus {
     background-color: #31d0aa;
 }
 
@@ -499,7 +502,7 @@ img {
 .container-footer-subscribe {
     display: inline-block;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 
@@ -511,9 +514,9 @@ img {
     color: #fff;
     margin-bottom: 16px;
     display: inline-block;
-} 
+}
 
-.form-footer{
+.form-footer {
     display: flex;
     gap: 24px;
 }
@@ -534,6 +537,7 @@ img {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     margin-right: 24px;
 }
+
 .footer-input::placeholder {
     color: #ffffff;
 }
@@ -566,14 +570,15 @@ img {
     display: inline;
     margin-left: 16px;
     fill: #fff;
-    flex-shrink: 0;    
+    flex-shrink: 0;
 }
 
 .modal-overlay {
     position: fixed;
     top: 0;
     z-index: 9999;
-    left: ;eft: 0;
+    left: ;
+    eft: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
@@ -586,12 +591,12 @@ img {
 
 .modal-overlay.is-open {
     opacity: 1;
-    pointer-events:auto;
+    pointer-events: auto;
     visibility: visible;
 }
 
 .modal {
-position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     border-radius: 4px;
@@ -609,7 +614,7 @@ position: absolute;
 
 
 .modal-button-close {
-position: absolute;
+    position: absolute;
     top: 24px;
     right: 24px;
     border-radius: 50%;
@@ -629,7 +634,8 @@ position: absolute;
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-close:hover, .modal-button-close:focus {
+.modal-button-close:hover,
+.modal-button-close:focus {
     background-color: #404bbf;
     fill: #fff;
     border: none;
@@ -648,7 +654,8 @@ position: absolute;
     color: #2e2f42;
     padding-left: auto;
     padding-right: auto;
-    margin-bottom: 16px;;
+    margin-bottom: 16px;
+    ;
 }
 
 .form-wrapper {
@@ -694,7 +701,8 @@ position: absolute;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover + .form-icon, .form-input:focus + .form-icon {
+.form-input:hover+.form-icon,
+.form-input:focus+.form-icon {
     fill: #4d5ae5;
 }
 
@@ -704,7 +712,8 @@ position: absolute;
 
 .modal-textarea {
     font-size: 12px;
-    line-height: 1.17;;
+    line-height: 1.17;
+    ;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -755,11 +764,11 @@ position: absolute;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-icon{
+.checkbox-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-checkbox:checked + .label-checkbox > .custom-checkbox{
+.input-checkbox:checked+.label-checkbox>.custom-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -794,10 +803,11 @@ position: absolute;
     cursor: pointer;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     
+
 }
 
-.button-modal-submit:hover, .button-modal-submit:focus {
+.button-modal-submit:hover,
+.button-modal-submit:focus {
     background-color: #404bbf;
     fill: #404bbf;
 }
