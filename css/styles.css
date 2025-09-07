@@ -1,3 +1,7 @@
+/* ======================== RESET & GLOBAL STYLES ============================= */
+/* these apply everywhere */
+
+
 /* Set base font, text color, and background for the whole page */
 body {
     font-family: "Roboto", sans-serif;
@@ -16,6 +20,20 @@ p {
     margin: 0;
 }
 
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+/* ===================== MOBILE STYLES (default: 320–767px) ========== */
+
+/* Set base font, text color, and background for the whole page */
+
+
 /* Remove default padding and bullet points from lists */
 ul,
 ol {
@@ -24,10 +42,7 @@ ol {
     margin: 0;
 }
 
-/* Remove underline from all links */
-a {
-    text-decoration: none;
-}
+
 
 /* Make all images block elements to remove spacing below them */
 img {
@@ -577,8 +592,7 @@ img {
     position: fixed;
     top: 0;
     z-index: 9999;
-    left: ;
-    eft: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
@@ -811,3 +825,31 @@ img {
     background-color: #404bbf;
     fill: #404bbf;
 }
+
+
+
+/* ========== TABLET STYLES (768–1157px) ========== */
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+
+    .nav-list,
+    .contacts {
+        display: flex;
+    }
+
+
+
+
+}
+
+/* ========== DESKTOP STYLES (1158px+) ========== */
+
+
+@media (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
