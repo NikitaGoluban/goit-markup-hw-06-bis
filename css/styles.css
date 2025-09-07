@@ -34,6 +34,21 @@ a {
 /* Set base font, text color, and background for the whole page */
 
 
+/* hamburger visible */
+.menu-toggle {
+    display: inline-flex;
+}
+
+
+/* hide full nav & contacts */
+.nav-list,
+.contacts {
+    display: none;
+    gap: 40px;
+
+}
+
+
 /* Remove default padding and bullet points from lists */
 ul,
 ol {
@@ -51,9 +66,9 @@ img {
 
 /* Set a maximum width and horizontal padding, and center the container */
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Add a bottom border to the page header */
@@ -103,12 +118,6 @@ img {
 /* Color variation for the white part of the logo in the footer */
 .footer-logo .studio-white {
     color: #f4f4fd;
-}
-
-/* Horizontal layout and spacing for navigation links */
-.nav-list {
-    display: flex;
-    gap: 40px;
 }
 
 
@@ -840,11 +849,11 @@ img {
     .contacts {
         display: flex;
     }
+}    
 
 
 
 
-}
 
 /* ========== DESKTOP STYLES (1158px+) ========== */
 
@@ -853,3 +862,4 @@ img {
     .container {
         max-width: 1158px;
     }
+}
