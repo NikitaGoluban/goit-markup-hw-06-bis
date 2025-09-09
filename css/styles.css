@@ -41,7 +41,7 @@ a {
     background: transparent;
     border: none;
     align-items: center;
-    
+
 }
 
 
@@ -223,7 +223,7 @@ img {
 /* Main title style in the hero section */
 .page-title {
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
@@ -867,6 +867,11 @@ img {
         display: none;
     }
 
+    /* Main title style in the hero section */
+    .page-title {
+    font-size: 56px;
+    }
+
 
     .nav-list,
     .contacts {
@@ -900,6 +905,10 @@ img {
         /* obraz dla desktop */
         max-width: 1440px;
         /* szerokość jak w Figmie */
+    }
+
+    .page-title {
+    font-size: 56px;
     }
 
 
