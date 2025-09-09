@@ -694,7 +694,6 @@ img {
     padding-left: auto;
     padding-right: auto;
     margin-bottom: 16px;
-    ;
 }
 
 .form-wrapper {
@@ -752,12 +751,11 @@ img {
 .modal-textarea {
     font-size: 12px;
     line-height: 1.17;
-    ;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    width: 360px;
+    width: 256px;
     height: 120px;
     padding: 8px 16px;
     outline: transparent;
@@ -866,10 +864,10 @@ img {
         display: none;
     }
 
-    /* Main title style in the hero section */
+     /* Main title style in the hero section */
     .page-title {
-    font-size: 56px;
-    }
+        font-size: 56px;
+        }
 
 
     .nav-list,
@@ -879,7 +877,7 @@ img {
 
     .section-title {
         background-image:
-            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            linear-gradient(rgba(46, 47, 66, 0.7),),
             url("../images/img-name2.jpg");
 
     }
@@ -889,7 +887,7 @@ img {
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: row;
-        gap: 40px
+        gap: 40px;
         }
 }
 
@@ -914,9 +912,7 @@ img {
         /* szerokość jak w Figmie */
     }
 
-    .page-title {
-    font-size: 56px;
-    }
+    
 
     
 
