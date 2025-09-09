@@ -49,7 +49,6 @@ a {
 .nav-list,
 .contacts {
     display: none;
-
 }
 
 
@@ -884,6 +883,14 @@ img {
             url("../images/img-name2.jpg");
 
     }
+
+    .nav-list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 40px
+        }
 }
 
 
@@ -910,6 +917,8 @@ img {
     .page-title {
     font-size: 56px;
     }
+
+    
 
 
 }
