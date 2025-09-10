@@ -273,12 +273,16 @@ img {
 /* Horizontal layout with spacing for the about section */
 .about-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    
 }
 
 /* Layout for each about item block */
 .about-item {
-    width: calc((100% - 72px) / 4);
+    width: 288px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -858,10 +862,10 @@ img {
         display: none;
     }
 
-     /* Main title style in the hero section */
+    /* Main title style in the hero section */
     .page-title {
         font-size: 56px;
-        }
+    }
 
 
     .nav-list,
@@ -871,8 +875,7 @@ img {
 
     .section-title {
         background-image:
-            linear-gradient(rgba(46, 47, 66, 0.7),)
-            url("../images/img-name2.jpg");
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) url("../images/img-name2.jpg");
 
     }
 
@@ -882,7 +885,7 @@ img {
         justify-content: flex-start;
         flex-direction: row;
         gap: 40px;
-        }
+    }
 
 }
 
@@ -915,4 +918,20 @@ img {
         margin-bottom: 8px;
         padding: 24px 100px;
     }
+
+/* Horizontal layout with spacing for the about section */
+    .about-list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 24px;
+}
+
+/* Layout for each about item block */
+    .about-item {
+        flex-direction: column;
+        width: calc((100% - 72px) / 4);
+        gap: 8px;
+}
 }
