@@ -289,18 +289,10 @@ img {
     background-color: #f4f4fd;
 }
 
-/*svg 4 images*/
+/*svg 4 images in mobile version they not appearing only in desktop verson*/
 
 .container-icon {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    padding: 24px 100px;
+    display: none;
 }
 
 .social-links-list {
@@ -857,6 +849,8 @@ img {
     }
 }
 
+
+
 /* ========== TABLET STYLES (768–1157px) ========== */
 
 @media (min-width: 768px) {
@@ -877,7 +871,7 @@ img {
 
     .section-title {
         background-image:
-            linear-gradient(rgba(46, 47, 66, 0.7),),
+            linear-gradient(rgba(46, 47, 66, 0.7),)
             url("../images/img-name2.jpg");
 
     }
@@ -889,15 +883,13 @@ img {
         flex-direction: row;
         gap: 40px;
         }
+
 }
 
 
 
 
-
 /* ========== DESKTOP STYLES (1158px+) ========== */
-
-
 @media (min-width: 1158px) {
     .container {
         max-width: 1158px;
@@ -912,9 +904,15 @@ img {
         /* szerokość jak w Figmie */
     }
 
-    
-
-    
-
-
+    .container-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        padding: 24px 100px;
+    }
 }
