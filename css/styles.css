@@ -773,7 +773,7 @@ img {
     border: 1px solid #4d5ae5
 }
 
-.model-cont-checkbox {
+.modal-cont-checkbox {
     margin-bottom: 24px;
 }
 
@@ -875,19 +875,45 @@ img {
 
     .section-title {
         background-image:
-            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) url("../images/img-name2.jpg");
-
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/img-name2.jpg");
     }
 
+
+}
+
+   
+@media (min-width: 768px) and (max-width: 1157px) {
+    .about-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    
+        /* Horizontal layout with spacing for the about section */
     .nav-list {
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
         flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
         gap: 40px;
     }
 
+    
+
+
+    /* Layout for each about item block */
+    .about-item {
+        flex-direction: column;
+        display: flex;
+        width: calc((100% - 24px) / 2);
+        gap: 8px;
+    }
 }
+
+
 
 
 
@@ -897,14 +923,16 @@ img {
     .container {
         max-width: 1158px;
     }
+      /* Numer telefonu sie nie lamie w wersji desktop */
+    .contacts {
+        flex-shrink: 0;
+    }
 
     .section-title {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/img-name3.jpg");
-        /* obraz dla desktop */
         max-width: 1440px;
-        /* szerokość jak w Figmie */
     }
 
     .container-icon {
@@ -919,19 +947,25 @@ img {
         padding: 24px 100px;
     }
 
-/* Horizontal layout with spacing for the about section */
+    /* Horizontal layout with spacing for the about section */
     .about-list {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: row;
         gap: 24px;
-}
+    }
 
-/* Layout for each about item block */
+
+    /* Layout for each about item block */
     .about-item {
         flex-direction: column;
         width: calc((100% - 72px) / 4);
         gap: 8px;
-}
+    }
+
+    .nav-list {
+    display: flex;
+    gap: 40px;
+    }
 }
