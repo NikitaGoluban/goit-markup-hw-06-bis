@@ -371,13 +371,13 @@ img {
     margin-bottom: 72px;
 }
 
-/* Horizontal layout for team members */
+/*
 .ourteam-list {
     display: flex;
     gap: 24px;
 }
 
-/* Style for each team member card */
+
 .ourteam-item {
     width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
@@ -389,6 +389,8 @@ img {
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+*/
 
 /* Container for team member text */
 .container-team {
@@ -864,17 +866,12 @@ img {
         display: flex;
     }
 
-
-    /* Main title style in the hero section */
-    .page-title {
-        font-size: 56px;
+    .ourteam-list {
+    display: flex;
     }
 
-    .about-list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 24px;
+    .ourteam-item {
+    width: calc((100% - 72px) / 2);
     }
 
 
@@ -903,6 +900,9 @@ img {
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/img-name2.jpg");
     }
+
+
+    
 }
 
 
@@ -961,15 +961,23 @@ img {
     }
 
 
-    /* Layout for each about item block */
-    .about-item {
-        flex-direction: column;
-        width: calc((100% - 72px) / 4);
-        gap: 8px;
+     .page-title {
+        font-size: 56px;
     }
 
-    .nav-list {
+    .about-list {
         display: flex;
-        gap: 40px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
     }
+
+
+    .ourteam-list {
+    display: flex;
+    }
+
+
+    .ourteam-item {
+    width: calc((100% - 72px) / 4);
 }
