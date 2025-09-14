@@ -371,6 +371,11 @@ img {
     margin-bottom: 72px;
 }
 
+.ourteam-list {  
+    gap: 24px;
+}
+
+
 /*
 .ourteam-list {
     display: flex;
@@ -859,15 +864,16 @@ img {
 
 @media (min-width: 768px) and (max-width: 1157px) {
     .menu-toggle {
-            display: none;
-        }
+        display: none;
+    }
 
         .contacts {
         display: flex;
     }
 
     .ourteam-list {
-    display: flex;
+    display: column;
+    columns: 2;
     }
 
     .ourteam-item {
@@ -980,4 +986,5 @@ img {
 
     .ourteam-item {
     width: calc((100% - 72px) / 4);
+    }
 }
