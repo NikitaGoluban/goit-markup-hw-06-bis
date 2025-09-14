@@ -277,7 +277,7 @@ img {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    
+
 }
 
 /* Layout for each about item block */
@@ -855,35 +855,21 @@ img {
 
 
 
-/* ========== TABLET STYLES (768–1157px) ========== */
-
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1157px) {
     .menu-toggle {
-        display: none;
+            display: none;
+        }
+
+        .contacts {
+        display: flex;
     }
+
 
     /* Main title style in the hero section */
     .page-title {
         font-size: 56px;
     }
 
-
-    .nav-list,
-    .contacts {
-        display: flex;
-    }
-
-    .section-title {
-        background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("../images/img-name2.jpg");
-    }
-
-
-}
-
-   
-@media (min-width: 768px) and (max-width: 1157px) {
     .about-list {
         display: flex;
         flex-direction: row;
@@ -891,8 +877,8 @@ img {
         gap: 24px;
     }
 
-    
-        /* Horizontal layout with spacing for the about section */
+
+    /* Horizontal layout with spacing for the about section */
     .nav-list {
         display: flex;
         flex-direction: row;
@@ -901,7 +887,7 @@ img {
         gap: 40px;
     }
 
-    
+
 
 
     /* Layout for each about item block */
@@ -910,6 +896,12 @@ img {
         display: flex;
         width: calc((100% - 24px) / 2);
         gap: 8px;
+    }
+
+    .section-title {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/img-name2.jpg");
     }
 }
 
@@ -920,11 +912,23 @@ img {
 
 /* ========== DESKTOP STYLES (1158px+) ========== */
 @media (min-width: 1158px) {
+    .menu-toggle {
+            display: none;
+        }
+
+        /* Main title style in the hero section */
+    .page-title {
+        font-size: 56px;
+    }
+
+
     .container {
         max-width: 1158px;
     }
-      /* Numer telefonu sie nie lamie w wersji desktop */
+
+    /* Numer telefonu sie nie lamie w wersji desktop */
     .contacts {
+        display: flex;
         flex-shrink: 0;
     }
 
@@ -965,7 +969,7 @@ img {
     }
 
     .nav-list {
-    display: flex;
-    gap: 40px;
+        display: flex;
+        gap: 40px;
     }
 }
