@@ -38,22 +38,7 @@ img {
     display: block;
 }
 
-/* Shared style for both header and footer logos */
-.header-logo,
-.footer-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-}
 
-/* Color variation for the dark part of the logo */
-.header-logo .studio-black {
-    color: #2e2f42;
-}
 
 
 
@@ -111,5 +96,50 @@ img {
 }
 
 
+/* Shared style for both header and footer logos  --- mobile tablet desktop */
+.header-logo,
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+/* Color variation for the dark part of the logo in the header --- mobile tablet desktop */
+.header-logo .studio-black {
+    color: #2e2f42;
+}
+
+/* Color variation for the white part of the logo in the footer   --- mobile tablet desktop */
+.footer-logo .studio-white {
+    color: #f4f4fd;
+}
 
 
+/* Hero section with dark background and custom padding */
+.section-title {
+    background-color: #2e2f42;
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100px;
+}
+
+/* Main title style in the hero section */
+.page-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto 48px;      /* check how it is working */
+    max-width: 496px;         /* check how it is working */
+}

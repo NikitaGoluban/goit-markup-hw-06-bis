@@ -114,6 +114,8 @@ img {
     padding: 24px 0;
     margin-right: 76px;
 }
+-----------------------------------------------------------------------------------------------------------
+
 
 /* I have put Shared style for both header and footer logos */
 .header-logo,
@@ -127,16 +129,17 @@ img {
     color: #4d5ae5;
 }
 
-/* Color variation for the dark part of the logo */
+/* I have put Color variation for the dark part of the logo */
 .header-logo .studio-black {
     color: #2e2f42;
 }
 
-/* Color variation for the white part of the logo in the footer */
+/* I have put Color variation for the white part of the logo in the footer */
 .footer-logo .studio-white {
     color: #f4f4fd;
 }
 
+/* ------------------------------nav-link, contacts  not include in new version css on mobile version ------------------------*/
 
 /* Style for navigation links */
 .nav-link {
@@ -203,12 +206,17 @@ img {
     color: #404bbf;
 }
 
+-------------------------------------------------------------------------------------------------------
+
+/* ------------------------------not include in new version css on mobile version ------------------------*/
 /* Generic section padding */
 .section {
     padding: 120px 0;
 }
 
-/* Hero section with dark background and custom padding */
+--------------------------------------------------------------------------------------------------------------
+
+/* I have put Hero section with dark background and custom padding */
 .section-title {
     background-color: #2e2f42;
     padding: 188px 0;
@@ -218,7 +226,7 @@ img {
     background-position: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
+    min-width: 100%;
 }
 
 
