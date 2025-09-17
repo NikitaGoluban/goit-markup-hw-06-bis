@@ -140,6 +140,96 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    margin: 0 auto 48px;      /* check how it is working */
-    max-width: 496px;         /* check how it is working */
+    margin: 0 auto 48px;      /* check how it is working and why it is here */
+    max-width: 496px;         /* check how it is working and why it is here */
 }
+
+/* Style for the button - Order services */
+.button {
+    background: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover and focus effects for the button */
+.button:hover,
+.button:focus {
+    background: #404bbf;
+}
+
+/* Utility class to hide elements visually but keep them accessible */
+.visually-hidden {
+    position: absolute;      /* check how it is workking */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*svg 4 images in mobile version they not appearing only in desktop verson*/
+.container-icon {
+    display: none;
+}
+
+/* Layout with spacing for the about section mobile*/
+.about-list {
+    display: flex;  /* from video */
+    row-gap: 72px; /* from viedo */
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column; /* from viedo column for mobile */
+    max-width: 320px; /* from viedo  288px + 16px + 16px =320*/
+    padding-left: 16px; /* from viedo */
+    padding-right: 16px; /* from viedo */
+    margin: 0 auto; /* from viedo */
+}
+
+/* Layout for each about item block */
+.about-item {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* lists for social media in about */
+.social-links-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+/* formating of each social icon link*/
+.social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links-svg {
+    fill: #f4f4fd;
+}
+
+
+

@@ -303,10 +303,7 @@ img {
     gap: 8px;
 }
 
-/* Light background for the team section */
-.section-ourteam {
-    background-color: #f4f4fd;
-}
+
 
 /*svg 4 images in mobile version they not appearing only in desktop verson*/
 
@@ -346,6 +343,11 @@ img {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+}
+
+/* Light background for the team section */
+.section-ourteam {
+    background-color: #f4f4fd;
 }
 
 /* Subtitle style for team member names */
