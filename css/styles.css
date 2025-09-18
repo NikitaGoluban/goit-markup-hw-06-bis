@@ -204,17 +204,20 @@ img {
 /* Layout for each about item block */
 .about-item {
     width: 320px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 8px; */
+
+    /* deleting flex ,flex direction , gap- homework4 error  */
 }
 
-/* lists for social media in about */
+/* I have put lists for social media in about */
 .social-links-list {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
+
 /* formating of each social icon link*/
 .social-link {
     width: 40px;
@@ -227,9 +230,231 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Ihave put  */
 .social-links-svg {
     fill: #f4f4fd;
 }
 
 
+
+
+/* Shared style for section titles */
+.title-about,
+.title-ourteam,
+.title-portfolio {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize;
+}
+
+/* ===================== ourteam ==================== */
+
+/* Light background for the team section */
+.section-ourteam {
+    background-color: #f4f4fd;
+}
+
+/* Subtitle style for team member names */
+.subtitle-ourteam {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+/* Subtitle style for about and portfolio sections */
+.subtitle-about,
+.subtitle-portfolio {
+    align-self: center;
+    /* from video */
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+/* I have put  Style for job titles under team member names */
+
+.ourteam-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+    margin-bottom: 8px;
+}
+
+/* Space below the team section title */
+.title-ourteam {
+    margin-bottom: 72px;
+}
+
+.ourteam-list {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ourteam-item {
+    /* width: calc((100% - 72px) / 4); crash mobile version  */
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
+/* Container for team member text */
+.container-team {
+    padding: 32px 0;
+}
+
+
+
+/* ===================== portfolio ==================== */
+
+/* Space below the portfolio title  */
+.title-portfolio {
+    margin-bottom: 72px;
+}  
+
+/* Responsive grid layout for portfolio items */
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;             /* row gap blocking */
+    row-gap: 48px;
+}
+
+
+/* repeat how it is works */
+.container-portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* check it  */
+.portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+/* I have put */
+.portfolio-item:hover .text-image-portfolio {
+    transform: translate(0);
+}
+
+/* check normally box shadow is for the hover not in normal poition  */
+.portfolio-item {
+    /* box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); */
+}
+
+
+/* Description overlay for portfolio images */
+.text-image-portfolio {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background: #4d5ae5;
+    height: 100%;
+    padding: 40px 32px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Container around portfolio image description */
+.container-portfolio {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+/* Shared text style for about and portfolio descriptions */
+.text-about,
+.text-portfolio {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* ===================== FOOTER STYLES ==================== */
+
+
+
+
+/* Footer background and spacing */
+.page-footer {
+    background-color: #2e2f42;
+    padding: 100px 0;
+}
+
+/* check it .   */
+.container-page-footer {
+    display: flex;
+    align-items: baseline;
+    /* max-width: 1158px;  this for desktop */
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* check it .   */
+/* .container-footer {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 120px;
+    padding: 0;
+
+} */
+
+
+/* check it .   */
+/* .container-footer-media {
+    display: inline-block;
+    margin: 0;
+    padding: 0 80px 0 0;
+
+} */
+
+/* check it .   */
+
+
+/*Footer logo positioning */
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+
+/* Footer paragraph text style */
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    max-width: 264px;    /* not making any changes in mobile version , check it */
+
+}
 
