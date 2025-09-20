@@ -55,7 +55,8 @@ img {
     background: transparent;
     border: none;
     align-items: center;
-
+    width: 24px;   /* I wrote to set width and height 24x24  */
+    height: 24px; /* I wrote to set width and height 24x24  */
 }
 
 /* hide full nav & contactsm mobile*/
@@ -67,8 +68,7 @@ img {
 /* Set a maximum width and horizontal padding, and center the container mobile*/
 .container {
     width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+    margin: 0 auto;  /* working not whenwidth 100% */
 }
 
 /* Add a bottom border to the page header mobile*/
@@ -77,13 +77,14 @@ img {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+}co
 
 /* Header container with horizontal alignment mobile */
 .container-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 
@@ -93,6 +94,11 @@ img {
     align-items: center;
     width: 100%;
     justify-content: space-between; /* logo left macimu and hamburger maximum right */
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    
 }
 
 
@@ -129,7 +135,8 @@ img {
     background-position: center;
     margin-left: auto;
     margin-right: auto;
-    min-width: 100px;
+    margin-bottom: 96px; /* space below hero section about only for mobile and tablet */
+    min-width: 320px;
 }
 
 /* Main title style in the hero section */
@@ -140,8 +147,8 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    margin: 0 auto 48px;      /* check how it is working and why it is here */
-    max-width: 496px;         /* check how it is working and why it is here */
+    /* margin: 0 auto 48px;   for me it is not working    */
+    max-width: 320px;         /* I have put max width 320px for mobile */
 }
 
 /* Style for the button - Order services */
@@ -203,12 +210,8 @@ img {
 
 /* Layout for each about item block */
 .about-item {
-    width: 320px;
-    /* display: flex;
-    flex-direction: column;
-    gap: 8px; */
+    width: 100%;
 
-    /* deleting flex ,flex direction , gap- homework4 error  */
 }
 
 /* I have put lists for social media in about */
@@ -272,12 +275,12 @@ img {
 /* Subtitle style for about and portfolio sections */
 .subtitle-about,
 .subtitle-portfolio {
-    align-self: center;
-    /* from video */
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    align-self: center;   /* from video */
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
     margin-bottom: 8px;
 }
@@ -392,6 +395,7 @@ img {
 /* Shared text style for about and portfolio descriptions */
 .text-about,
 .text-portfolio {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
