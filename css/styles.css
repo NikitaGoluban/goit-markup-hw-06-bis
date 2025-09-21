@@ -270,7 +270,8 @@ img {
 /* ===================== ourteam ==================== */
 
 .container-ourteam {
-    margin-top: 96px;   /* space above the team section  96 px for mobile and tablet version, for desktop version there is 120px*/
+    margin-top: 96px;
+    padding-bottom: 72px;
 }
 
 /* Light background for the team section */
@@ -278,7 +279,6 @@ img {
     background-color: #f4f4fd;
 }
 
-/* Subtitle style for team member names */
 .subtitle-ourteam {
     font-weight: 500;
     font-size: 20px;
@@ -313,17 +313,14 @@ img {
     margin-bottom: 8px;
 }
 
-/* Space below the team section title */
-.title-ourteam {
-    margin-top: 96px; /* space between h3 and end of section is  96 px for mobile and tablet version, for desktop version there is 120px*/
-    margin-bottom: 72px;
-}
 
 .ourteam-list {
-    gap: 24px;
+    row-gap: 72px;
     display: flex;
     flex-direction: column;
 }
+
+
 
 
 .ourteam-item {
@@ -336,12 +333,21 @@ img {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+    margin-left: 28px; /* only for mobile version */
+    margin-right: 28px; /* only for mobile version */
 }
 
 
 /* Container for team member text */
 .container-team {
     padding: 32px 0;
+}
+
+
+/* Space below the team section title */
+.title-ourteam {
+    padding-top: 96px; 
+    margin-bottom: 72px;
 }
 
 
