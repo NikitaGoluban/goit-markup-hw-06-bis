@@ -153,6 +153,17 @@ img {
     min-width: 320px;
 }
 
+element {}
+
+.text-about {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
 /* Main title style in the hero section */
 .page-title {
     font-weight: 700;
@@ -238,6 +249,17 @@ img {
     /* from viedo */
 }
 
+
+.title-ourteam {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42
+}
+
+
 /* Layout for each about item block */
 .about-item {
     width: 100%;
@@ -269,22 +291,10 @@ img {
 }
 
 
-
-
-/* Shared style for section titles */
-.title-about,
-.title-ourteam,
-.title-portfolio {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    text-transform: capitalize;
-}
-
 /* ===================== ourteam ==================== */
+
+
+
 
 .container-ourteam {
     margin-top: 96px;
@@ -306,19 +316,16 @@ img {
     margin-bottom: 8px;
 }
 
-/* Subtitle style for about and portfolio sections */
-.subtitle-about,
-.subtitle-portfolio {
-    align-self: center;
-    /* from video */
+.subtitle-about { 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11111;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-bottom: 8px;
 }
+
+
 
 /* I have put  Style for job titles under team member names */
 
@@ -379,14 +386,35 @@ portfolio-inner {
 }
 
 
+.subtitle-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    /* from video */
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;  
+}
+
 .container-portfolio1 {
     margin-top: 96px;
     padding-bottom: 96px;
+    max-width: 288px;
 }
 
 /* Space below the portfolio title  */
 .title-portfolio {
     margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42
 }
 
 
@@ -421,6 +449,8 @@ portfolio-inner {
 .container-portfolio-wrap {
     position: relative;
     overflow: hidden;
+    max-width: 288px%;
+
 }
 
 
@@ -467,7 +497,7 @@ portfolio-inner {
 }
 
 /* Shared text style for about and portfolio descriptions */
-.text-about,
+
 .text-portfolio {
     font-weight: 500;
     font-size: 16px;
@@ -479,60 +509,49 @@ portfolio-inner {
 /* ===================== FOOTER STYLES ==================== */
 
 
-
-
 /* Footer background and spacing */
 .page-footer {
     background-color: #2e2f42;
     padding: 100px 0;
+    
+    
+
+       
 }
 
 /* check it .   */
 .container-page-footer {
-    display: flex;
-    align-items: baseline;
-    /* max-width: 1158px;  this for desktop */
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-/* check it .   */
-/* .container-footer {
-    display: inline-block;
-    margin-left: 0;
-    margin-right: 120px;
-    padding: 0;
-
-} */
-
-
-/* check it .   */
-/* .container-footer-media {
-    display: inline-block;
-    margin: 0;
-    padding: 0 80px 0 0;
-
-} */
-
-/* check it .   */
-
-
-/*Footer logo positioning */
-.footer-logo {
-    display: inline-block;
-    margin-bottom: 16px;
+width: 288px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-left: 16px;
+margin-right: 16px;
+padding: auto;
+padding: auto;
 }
 
 
-/* Footer paragraph text style */
+
+.container container-footer {
+    height: 112px;
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: center;
+    align-items: centerf;
+}
+
 .footer-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    max-width: 264px;
-    /* not making any changes in mobile version , check it */
-
+    display: inline-flex;
+    justify-content: center;
 }
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+)
+
+
