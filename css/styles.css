@@ -269,6 +269,10 @@ img {
 
 /* ===================== ourteam ==================== */
 
+.container-ourteam {
+    margin-top: 96px;   /* space above the team section  96 px for mobile and tablet version, for desktop version there is 120px*/
+}
+
 /* Light background for the team section */
 .section-ourteam {
     background-color: #f4f4fd;
@@ -311,6 +315,7 @@ img {
 
 /* Space below the team section title */
 .title-ourteam {
+    margin-top: 96px; /* space between h3 and end of section is  96 px for mobile and tablet version, for desktop version there is 120px*/
     margin-bottom: 72px;
 }
 
