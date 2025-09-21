@@ -271,7 +271,7 @@ img {
 
 .container-ourteam {
     margin-top: 96px;
-    padding-bottom: 72px;
+    padding-bottom: 96px;
 }
 
 /* Light background for the team section */
@@ -353,6 +353,11 @@ img {
 
 
 /* ===================== portfolio ==================== */
+
+.container-portfolio1 {
+    margin-top: 96px;
+    padding-bottom: 96px;
+}
 
 /* Space below the portfolio title  */
 .title-portfolio {
