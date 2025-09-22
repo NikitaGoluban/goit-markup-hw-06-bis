@@ -508,50 +508,68 @@ portfolio-inner {
 
 /* ===================== FOOTER STYLES ==================== */
 
-
-/* Footer background and spacing */
+/* footer */
 .page-footer {
     background-color: #2e2f42;
-    padding: 100px 0;
-    
-    
-
-       
+    /* kolor tła */
+    display: flex;
+    flex-direction: column;  /* divy jeden pod drugim */
+    align-items: center;  /* wyśrodkowane */
+    padding: 96px 16px;  /* marginesy góra/dół i boki */
 }
 
-/* check it .   */
+/* div1 */
 .container-page-footer {
-width: 288px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-margin-left: 16px;
-margin-right: 16px;
-padding: auto;
-padding: auto;
+    width: 288px;
+    min-height: 112px;
+    margin-bottom: 40px; /* odstęp od kolejnego */
+    text-align: center;
+    color: #fff;
 }
 
+/* div2 */
+.container-footer {
+    width: 288px;
+    min-height: 120px;    /* np. inna wysokość */
+    margin-bottom: 72px;
+    text-align: center;
+    color: #fff;
+}
 
-
-.container container-footer {
-    height: 112px;
-    padding-left: 16px;
-    padding-right: 16px;
+.social-links-list-footer{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: centerf;
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 72px;
 }
 
-.footer-text {
-    display: inline-flex;
-    justify-content: center;
-}
 
 .footer-logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-)
+
+.footer-text {
+    display: inline-flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    text-align: left; 
+
+
+
+/* div3 */
+.container-footer-media {
+    width: 288px;
+    min-height: 136px;    /* inny wymiar */
+    text-align: center;
+    color: #fff
+}
 
 
