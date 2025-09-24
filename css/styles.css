@@ -1,9 +1,6 @@
 /* ======================== RESET & GLOBAL STYLES ============================= */
 /* these apply everywhere */
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 
 
 /* Set base font, text color, and background for the whole page */
@@ -381,24 +378,7 @@ element {}
 
 /* ===================== portfolio ==================== */
 
-portfolio-inner {
-    padding: 32px 16px
-}
 
-
-.subtitle-portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    /* from video */
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    margin-bottom: 8px;  
-}
 
 .container-portfolio1 {
     margin-top: 96px;
@@ -406,7 +386,7 @@ portfolio-inner {
     max-width: 288px;
 }
 
-/* Space below the portfolio title  */
+/* H3 portfilio  */
 .title-portfolio {
     margin-bottom: 72px;
     font-weight: 700;
@@ -426,62 +406,26 @@ portfolio-inner {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 8px;
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    row-gap: 48px;
-    justify-content: center;
-    margin-right: 16px;
-    margin-left: 16px; */
 }
 
 .portfolio-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 
 
-/* repeat how it is works */
-.container-portfolio-wrap {
-    position: relative;
-    overflow: hidden;
-    max-width: 288px%;
-
-}
-
-
-
-/* check it  */
-.portfolio-item:hover {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-        0 1px 1px 0 rgba(46, 47, 66, 0.16),
-        0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-/* I have put */
-.portfolio-item:hover .text-image-portfolio {
-    transform: translate(0);
-}
-
-/* check normally box shadow is for the hover not in normal poition  */
-.portfolio-item {
-    /* box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); */
-}
-
-
-/* Description overlay for portfolio images */
 .text-image-portfolio {
     position: absolute;
     top: 0;
+    left: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     background: #4d5ae5;
+    width: 100%;
     height: 100%;
     padding: 40px 32px;
     transform: translateY(100%);
@@ -496,6 +440,20 @@ portfolio-inner {
     width: 100%;
 }
 
+.subtitle-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    /* from video */
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
 /* Shared text style for about and portfolio descriptions */
 
 .text-portfolio {
@@ -505,6 +463,44 @@ portfolio-inner {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+
+
+.container-portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+    max-width: 288px;
+    /* poprawione */
+}
+
+
+
+/* I do not see reason   */
+.portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+
+
+.portfolio-item:hover .text-image-portfolio {
+    transform: translateY(0);
+    /* poprawione */
+}
+
+
+/* check normally box shadow is for the hover not in normal poition  */
+.portfolio-item {
+    /* box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); */
+}
+
+
+
+
+
+
+
 
 /* ===================== FOOTER STYLES ==================== */
 
@@ -574,9 +570,30 @@ portfolio-inner {
     
 }
 
+.footer-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+
+.container-footer-subscribe {
+    width: 288px;
+
+}
+
+.footer-input { 
+    width: 288px;
+    background-color: #2e2f42;
+}
+
 .text-footer-subscribe {
     margin-bottom: 16px;
 }
+
+
 
 .button-footer-subscribe {
     display: flex;
@@ -596,6 +613,7 @@ portfolio-inner {
     background: #4d5ae5;
     margin: 0 auto;  
 }
+
 
 .form-footer {
     display: flex;
