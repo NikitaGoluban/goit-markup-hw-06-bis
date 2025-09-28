@@ -312,7 +312,7 @@ element {}
     margin-bottom: 8px;
 }
 
-.subtitle-about { 
+.subtitle-about {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11111;
@@ -399,7 +399,7 @@ element {}
 
 /* Responsive grid layout for portfolio items */
 .portfolio-list {
-    
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -410,7 +410,7 @@ element {}
 .portfolio-item {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
 }
 
 
@@ -510,16 +510,20 @@ element {}
     background-color: #2e2f42;
     /* kolor tła */
     display: flex;
-    flex-direction: column;  /* divy jeden pod drugim */
-    align-items: center;  /* wyśrodkowane */
-    padding: 96px 16px;  /* marginesy góra/dół i boki */
+    flex-direction: column;
+    /* divy jeden pod drugim */
+    align-items: center;
+    /* wyśrodkowane */
+    padding: 96px 16px;
+    /* marginesy góra/dół i boki */
 }
 
 /* div1 */
 .container-page-footer {
     width: 288px;
     min-height: 112px;
-    margin-bottom: 40px; /* odstęp od kolejnego */
+    margin-bottom: 40px;
+    /* odstęp od kolejnego */
     text-align: center;
     color: #fff;
 }
@@ -527,13 +531,14 @@ element {}
 /* div2 */
 .container-footer {
     width: 288px;
-    min-height: 120px;    /* np. inna wysokość */
+    min-height: 120px;
+    /* np. inna wysokość */
     margin-bottom: 72px;
     text-align: center;
     color: #fff;
 }
 
-.social-links-list-footer{
+.social-links-list-footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -557,7 +562,7 @@ element {}
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    text-align: left; 
+    text-align: left;
 }
 
 
@@ -565,10 +570,11 @@ element {}
 /* div3 */
 .container-footer-media {
     width: 288px;
-    min-height: 136px;    /* inny wymiar */
+    min-height: 136px;
+    /* inny wymiar */
     text-align: center;
     color: #fff;
-    
+
 }
 
 .footer-input::placeholder {
@@ -585,7 +591,7 @@ element {}
 
 }
 
-.footer-input { 
+.footer-input {
     width: 288px;
     background-color: #2e2f42;
 }
@@ -612,7 +618,7 @@ element {}
     min-width: 165px;
     height: 40px;
     background: #4d5ae5;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 
@@ -667,7 +673,7 @@ element {}
 
 
 
-        /* it was hided on mobile but should be on tablet and desktop*/
+    /* it was hided on mobile but should be on tablet and desktop*/
     .nav-list,
     .contacts {
         display: flex;
@@ -687,17 +693,17 @@ element {}
 
     /* Style for navigation links */
     .nav-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    padding: 24px 0;
-    display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        padding: 24px 0;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     }
 
-        /* Hover and focus effects for navigation links */
+    /* Hover and focus effects for navigation links */
     .nav-link:hover,
     .nav-link:focus {
         color: #404bbf;
@@ -727,17 +733,18 @@ element {}
         font-style: normal;
         margin-left: auto;
         display: flex;
-        flex-shrink: 0;  /* nummer sie nie lamie*/
+        flex-shrink: 0;
+        /* nummer sie nie lamie*/
     }
 
-        
-     .contacts-lists {
+
+    .contacts-lists {
         display: flex;
         flex-direction: column;
         row-gap: 12px;
     }
-    
-          .contacts-link {
+
+    .contacts-link {
         display: flex;
         font-size: 16px;
         line-height: 1.5;
@@ -760,21 +767,27 @@ element {}
     }
 
     .about-list {
-        
-        max-width: 768px; /* from video 736px + 16px + 16px = 768px */
-        flex-direction: row; /* from video */
-        column-gap: 24px; /* from video */
-        flex-wrap: wrap; /* from video */
-    ;
+
+        max-width: 768px;
+        /* from video 736px + 16px + 16px = 768px */
+        flex-direction: row;
+        /* from video */
+        column-gap: 24px;
+        /* from video */
+        flex-wrap: wrap;
+        /* from video */
+        ;
 
     }
 
     .about-item {
-        width: calc((100% - 24px) / 2); /* from video */
+        width: calc((100% - 24px) / 2);
+        /* from video */
     }
-/* ------------------tablet section our team --------------------- */
 
-   
+    /* ------------------tablet section our team --------------------- */
+
+
 
     .ourteam-list {
         display: flex;
@@ -790,73 +803,69 @@ element {}
         margin: 0 auto;
     }
 
-        .ourteam-item {
-        width: calc((100% - 24px) / 2)
-
-
-        
-        flex-direction: row;
+    .ourteam-item {
+        width: calc((100% - 24px) / 2) flex-direction: row;
         align-items: center;
         background-color: #ffffff;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         /* margin-left: 28px;
         margin-right: 28px; */
-        }
+    }
 
 
-        /* ---------tablet  portfolio  */
+    /* ---------tablet  portfolio  */
 
-        .portfolio-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 24px;
-            row-gap: 48px;
-            flex-direction: row;
-        }
-    
-        .portfolio-item {
-            width: calc((100% - 24px) / 2);
-        }
+    .portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        flex-direction: row;
+    }
 
-        container-portfolio1 {
-            max-width: 1157px;
-            
-            
-        }
- 
-        .section-portfolio {
-            padding-top: 96px;
-        }
+    /* .portfolio-item {
+        width: calc((100% - 24px) / 2);
+    } */
 
-        .container-portfolio-wrap {
-            position: relative;
-            overflow: hidden;
-        }
+    container-portfolio1 {
+        max-width: 1157px;
 
-        .container-portfolio {
-            width: 288px;
-        }
 
-        
+    }
+
+    .section-portfolio {
+        padding-top: 96px;
+    }
+
+    .container-portfolio-wrap {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container-portfolio {
+        width: 288px;
+    }
+
+
 }
-   
-   
-   
-    /* ========== --------------------DESKTOP STYLES (1158px+) --------------------========== */
+
+
+
+/* ========== --------------------DESKTOP STYLES (1158px+) --------------------========== */
 
 
 @media (min-width: 1158px) {
     .menu-toggle {
         display: none;
     }
-     /* Set a maximum width and horizontal padding, and center the container */
+
+    /* Set a maximum width and horizontal padding, and center the container */
     .container {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
+        max-width: 1158px;
+        padding: 0 15px;
+        margin: 0 auto;
     }
 
-     /* Header container with horizontal alignment */
+    /* Header container with horizontal alignment */
     .container-header {
         display: flex;
         align-items: center;
@@ -867,23 +876,24 @@ element {}
         display: flex;
         align-items: center;
         width: 261px;
-    
+
     }
 
-    
-     /* Logo spacing attention there is another header logo in tablet*/
+
+    /* Logo spacing attention there is another header logo in tablet*/
     .header-logo {
         padding: 24px 0;
         margin-right: 76px;
-        
+
     }
 
-      /* Horizontal layout and spacing for navigation links */
+    /* Horizontal layout and spacing for navigation links */
     .nav-list {
         display: flex;
         gap: 40px;
     }
-         /* Style for navigation links */
+
+    /* Style for navigation links */
     .nav-link {
         font-weight: 500;
         font-size: 16px;
@@ -895,13 +905,13 @@ element {}
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     }
 
-        /* Hover and focus effects for navigation links */
+    /* Hover and focus effects for navigation links */
     .nav-link:hover,
     .nav-link:focus {
         color: #404bbf;
     }
 
-     .nav-link-psevdo {
+    .nav-link-psevdo {
         position: relative;
         color: #404bbf;
     }
@@ -919,20 +929,20 @@ element {}
         bottom: -1px;
     }
 
-        /* Horizontal layout and spacing for contact items */
+    /* Horizontal layout and spacing for contact items */
     .contacts-lists {
         display: flex;
         gap: 40px;
     }
 
-        /* Align contact block to the right */
+    /* Align contact block to the right */
     .contacts {
         display: flex;
         font-style: normal;
         margin-left: auto;
     }
 
-     /* Style for contact links (email and phone) */
+    /* Style for contact links (email and phone) */
     .contacts-link {
         font-size: 16px;
         line-height: 1.5;
@@ -943,7 +953,7 @@ element {}
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-     /* Hover and focus effects for contact links */
+    /* Hover and focus effects for contact links */
     .contacts-link:hover,
     .contacts-link:focus {
         color: #404bbf;
@@ -957,10 +967,10 @@ element {}
     .section-about {
         padding-bottom: 120px;
     }
-  
 
 
-     /* Hero section with dark background and custom padding */
+
+    /* Hero section with dark background and custom padding */
     .section-title {
         background-color: #2e2f42;
         padding: 188px 0;
@@ -988,8 +998,8 @@ element {}
 
 
 
-      /* -------section about -------- */
-  
+    /* -------section about -------- */
+
     .about-list {
         flex-direction: row;
         gap: 24px;
@@ -998,15 +1008,20 @@ element {}
 
     .container-icon {
         align-items: center;
-        display: flex; /* from video */
+        display: flex;
+        /* from video */
         justify-content: center;
-        height: 112px;   /* from video */
-        background-color: #f4f4fd;   /* from video */
-        width: 100%;  /* from video */
+        height: 112px;
+        /* from video */
+        background-color: #f4f4fd;
+        /* from video */
+        width: 100%;
+        /* from video */
         border-radius: 4px;
         margin-bottom: 8px;
         padding: 24px 100px;
-        background-color: #f4f4fd; /* from video */
+        background-color: #f4f4fd;
+        /* from video */
         border: 1px solid #8e8f99;
         /* padding: 24px 100px; correction from mentor */
     }
@@ -1035,9 +1050,10 @@ element {}
         margin-left: 0;
         margin-right: 0;
     }
+
     .title-ourteam {
         padding-top: 0;
-        
+
     }
 
     .title-ourteam {
@@ -1062,14 +1078,9 @@ element {}
 
 
 
-    
 
-    
+
+
 
 
 }
-
-
-
-
-
