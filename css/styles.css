@@ -382,7 +382,7 @@ element {}
 .container-portfolio1 {
     margin-top: 96px;
     padding-bottom: 96px;
-    max-width: 288px;
+    /* max-width: 288px; */
 }
 
 /* H3 portfilio  */
@@ -487,6 +487,8 @@ element {}
     transform: translateY(0);
     /* poprawione */
 }
+
+
 
 
 /* check normally box shadow is for the hover not in normal poition  */
@@ -804,9 +806,38 @@ element {}
 
         /* ---------tablet  portfolio  */
 
-       
- 
+        .portfolio-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            row-gap: 48px;
+            flex-direction: row;
+        }
+    
+        .portfolio-item {
+            width: calc((100% - 24px) / 2);
+        }
 
+        container-portfolio1 {
+            max-width: 1157px;
+            
+            
+        }
+ 
+        .section-portfolio {
+            padding-top: 96px;
+        }
+
+        .container-portfolio-wrap {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container-portfolio {
+            width: 288px;
+        }
+
+        
 }
    
    
@@ -1014,6 +1045,18 @@ element {}
     }
 
 
+    /* ----------desktop - portfolio --------- */
+    .portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 48px;
+        flex-direction: row;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 48px) / 3);
+    }
 
 
 
