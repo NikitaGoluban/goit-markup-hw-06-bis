@@ -107,9 +107,9 @@ img {
     width: 100%;
 }
 
-/* ------------------------------not include in new version css on mobile version ------------------------*/
+/* ------------------------------not include in new version css on mobile version but in ------------------------*/
 
-/* Logo spacing  that is for desktop version   */
+/* I have put in desktop Logo spacing  that is for desktop version   */
 .header-logo {
     padding: 24px 0;
     margin-right: 76px;
@@ -139,7 +139,7 @@ img {
     color: #f4f4fd;
 }
 
-/* ------------------------------nav-link, contacts  not include in new version css on mobile version ------------------------*/
+/* ------------------------------nav-link, contacts  not include in new version css on mobile version , include on tablet version ------------------------*/
 
 /* Style for navigation links */
 .nav-link {
@@ -972,10 +972,10 @@ img {
     }
 
        .ourteam-list {
-        max-width: 768px; 
         flex-direction: row; 
         column-gap: 24px; 
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
+         
     }
 
     .ourteam-item {
@@ -992,9 +992,7 @@ img {
 
 /* ========== DESKTOP STYLES (1158px+) ========== */
 @media (min-width: 1158px) {
-    .menu-toggle {
-        display: none;
-    }
+   
 
     /* Main title style in the hero section */
     .page-title {

@@ -195,8 +195,7 @@ element {}
     display: block;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* margin-bottom: 72px;
-    margin-top: 72px; */
+
     margin: 0 auto;
 }
 
@@ -621,3 +620,413 @@ element {}
     gap: 16px;
     /* 🔥 odstęp między inputem a przyciskiem */
 }
+
+
+
+
+
+
+
+/* ==========-------------------- TABLET STYLES -----------------------------------(768px+) ========== */
+
+
+@media (min-width: 768px) and (max-width: 1157px) {
+
+    .section-title {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/img-name@2x.jpg);
+        min-width: 768px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .container {
+        max-width: auto;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* header -desktop */
+    .header-logo {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 16px;
+        margin-right: 120px;
+    }
+
+
+
+        /* it was hided on mobile but should be on tablet and desktop*/
+    .nav-list,
+    .contacts {
+        display: flex;
+    }
+
+    /* Horizontal layout with spacing for the about section */
+    .nav-list {
+        width: 261px;
+        /* height: 48px; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px;
+        justify-content: flex-start;
+    }
+
+    /* Style for navigation links */
+    .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
+
+        /* Hover and focus effects for navigation links */
+    .nav-link:hover,
+    .nav-link:focus {
+        color: #404bbf;
+    }
+
+
+    .nav-link-psevdo {
+        position: relative;
+        color: #404bbf;
+    }
+
+    .nav-link-psevdo::after {
+        content: "";
+        display: block;
+        border-radius: 2px;
+        width: 100%;
+        position: absolute;
+        height: 4px;
+        background-color: #404bbf;
+        left: 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        bottom: -1px;
+    }
+
+    /* Align contact block to the right */
+    .contacts {
+        font-style: normal;
+        margin-left: auto;
+        display: flex;
+        flex-shrink: 0;  /* nummer sie nie lamie*/
+    }
+
+        
+     .contacts-lists {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+    
+          .contacts-link {
+        display: flex;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Hover and focus effects for contact links */
+    .contacts-link:hover,
+    .contacts-link:focus {
+        color: #404bbf;
+    }
+
+    /* ------section about ------------ */
+
+    .subtitle-about {
+        text-align: left;
+    }
+
+    .about-list {
+        
+        max-width: 768px; /* from video 736px + 16px + 16px = 768px */
+        flex-direction: row; /* from video */
+        column-gap: 24px; /* from video */
+        flex-wrap: wrap; /* from video */
+    ;
+
+    }
+
+    .about-item {
+        width: calc((100% - 24px) / 2); /* from video */
+    }
+/* ------------------tablet section our team --------------------- */
+
+   
+
+    .ourteam-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+        /* 24px between columns */
+        row-gap: 64px;
+        /* vertical spacing between rows */
+        max-width: 736px;
+        /* 2 x 352px + 24px gap = 736px */
+        margin: 0 auto;
+    }
+
+        .ourteam-item {
+        width: calc((100% - 24px) / 2)
+
+
+        
+        flex-direction: row;
+        align-items: center;
+        background-color: #ffffff;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        /* margin-left: 28px;
+        margin-right: 28px; */
+        }
+
+
+        /* ---------tablet  portfolio  */
+
+       
+ 
+
+}
+   
+   
+   
+    /* ========== --------------------DESKTOP STYLES (1158px+) --------------------========== */
+
+
+@media (min-width: 1158px) {
+    .menu-toggle {
+        display: none;
+    }
+     /* Set a maximum width and horizontal padding, and center the container */
+    .container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    }
+
+     /* Header container with horizontal alignment */
+    .container-header {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+        width: 261px;
+    
+    }
+
+    
+     /* Logo spacing attention there is another header logo in tablet*/
+    .header-logo {
+        padding: 24px 0;
+        margin-right: 76px;
+        
+    }
+
+      /* Horizontal layout and spacing for navigation links */
+    .nav-list {
+        display: flex;
+        gap: 40px;
+    }
+         /* Style for navigation links */
+    .nav-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        padding: 24px 0;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
+
+        /* Hover and focus effects for navigation links */
+    .nav-link:hover,
+    .nav-link:focus {
+        color: #404bbf;
+    }
+
+     .nav-link-psevdo {
+        position: relative;
+        color: #404bbf;
+    }
+
+    .nav-link-psevdo::after {
+        content: "";
+        display: block;
+        border-radius: 2px;
+        width: 100%;
+        position: absolute;
+        height: 4px;
+        background-color: #404bbf;
+        left: 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        bottom: -1px;
+    }
+
+        /* Horizontal layout and spacing for contact items */
+    .contacts-lists {
+        display: flex;
+        gap: 40px;
+    }
+
+        /* Align contact block to the right */
+    .contacts {
+        display: flex;
+        font-style: normal;
+        margin-left: auto;
+    }
+
+     /* Style for contact links (email and phone) */
+    .contacts-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        padding: 24px 0;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+     /* Hover and focus effects for contact links */
+    .contacts-link:hover,
+    .contacts-link:focus {
+        color: #404bbf;
+    }
+
+    /* Generic section padding */
+    .section {
+        padding: 0 0;
+    }
+
+    .section-about {
+        padding-bottom: 120px;
+    }
+  
+
+
+     /* Hero section with dark background and custom padding */
+    .section-title {
+        background-color: #2e2f42;
+        padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name3x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+    }
+
+    /* Main title style in the hero section */
+    .page-title {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+        margin: 0 auto 48px;
+        max-width: 496px;
+    }
+
+
+
+
+      /* -------section about -------- */
+  
+    .about-list {
+        flex-direction: row;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .container-icon {
+        align-items: center;
+        display: flex; /* from video */
+        justify-content: center;
+        height: 112px;   /* from video */
+        background-color: #f4f4fd;   /* from video */
+        width: 100%;  /* from video */
+        border-radius: 4px;
+        margin-bottom: 8px;
+        padding: 24px 100px;
+        background-color: #f4f4fd; /* from video */
+        border: 1px solid #8e8f99;
+        /* padding: 24px 100px; correction from mentor */
+    }
+
+    /* ------------our team sectio ---------------- */
+
+    .ourteam-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        row-gap: 0;
+    }
+
+    .ourteam-item {
+        width: calc((100% - 72px) / 4);
+        border-radius: 0 0 4px 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+
+    .ourteam-item {
+        /* Remove margin-left and margin-right */
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .title-ourteam {
+        padding-top: 0;
+        
+    }
+
+    .title-ourteam {
+        padding-top: 120px;
+    }
+
+
+
+
+
+
+
+    
+
+    
+
+
+}
+
+
+
+
+
