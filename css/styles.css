@@ -1075,6 +1075,11 @@ element {}
 
 
     /* ----------desktop - portfolio --------- */
+
+    .container-portfolio-wrap {
+        max-width: 100%;
+    }
+
     .portfolio-list {
         display: flex;
         flex-wrap: wrap;
@@ -1108,10 +1113,10 @@ element {}
         
         /* div1 */
     .container-footer {
-        display: inline-bloc;
+        display: inline-block;
         margin-left: 0px;
         margin-right: 120px;
-        padding: 0;k
+        padding: 0;
     }
 
      /* div2 */
@@ -1122,6 +1127,7 @@ element {}
         
     .container-footer-media {
         display: inline-block;
+        margin-right: 80px;
         }
 
     .footer-logo {
