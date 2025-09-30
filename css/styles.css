@@ -226,6 +226,11 @@ element {}
 }
 
 /* Layout with spacing for the about section mobile*/
+
+.container-about {
+    padding-bottom: 96px;
+}
+
 .about-list {
     display: flex;
     /* from video */
@@ -293,7 +298,6 @@ element {}
 
 
 .container-ourteam {
-    margin-top: 96px;
     padding-bottom: 96px;
 }
 
@@ -380,13 +384,14 @@ element {}
 
 
 .container-portfolio1 {
-    margin-top: 96px;
+ 
     padding-bottom: 96px;
     /* max-width: 288px; */
 }
 
 /* H3 portfilio  */
 .title-portfolio {
+    padding-top: 96px;
     margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
@@ -399,7 +404,7 @@ element {}
 
 /* Responsive grid layout for portfolio items */
 .portfolio-list {
-
+    row-gap: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -874,8 +879,9 @@ element {}
     .header-nav {
         display: flex;
         align-items: center;
-        width: 261px;
-
+        width: auto;            /* або значення яке потрібно */
+        justify-content: normal;/* або інше потрібне значення */
+        padding: 0;   
     }
 
 
@@ -959,14 +965,16 @@ element {}
     }
 
     /* Generic section padding */
-    .section {
-        padding: 0 0;
-    }
 
-    .section-about {
+    .container-about,
+    .container-ourteam,
+    .container-portfolio1 {
         padding-bottom: 120px;
     }
 
+    .container-about{
+        margin-top: 120px;
+    }
 
 
     /* Hero section with dark background and custom padding */
@@ -1025,6 +1033,15 @@ element {}
         /* padding: 24px 100px; correction from mentor */
     }
 
+    .subtitle-about {
+    font-weight: 500;
+    font-size: 20px
+    }
+
+    .text-about {
+    font-weight: 400;
+    }
+
     /* ------------our team sectio ---------------- */
 
     .ourteam-list {
@@ -1050,12 +1067,9 @@ element {}
         margin-right: 0;
     }
 
-    .title-ourteam {
-        padding-top: 0;
-
-    }
-
-    .title-ourteam {
+   
+    .title-ourteam,
+    .title-portfolio {
         padding-top: 120px;
     }
 
