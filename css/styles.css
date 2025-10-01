@@ -603,6 +603,7 @@ element {}
 
 .footer-input {
     width: 288px;
+    height: 40px;
     background-color: #2e2f42;
 }
 
