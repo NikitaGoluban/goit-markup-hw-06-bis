@@ -786,7 +786,7 @@ element {}
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    width: 256px;
+    width: 240px;
     height: 120px;
     padding: 8px 16px;
     outline: transparent;
@@ -1469,9 +1469,9 @@ element {}
     /* ---------------desktop footer----------- */
 
     .page-footer {
-            padding: 100px 0;
-        }
-        
+        padding: 100px 0;
+    }
+
     .container-page-footer {
         display: flex;
         align-items: baseline;
@@ -1480,9 +1480,9 @@ element {}
         padding-left: 15px;
         padding-right: 15px;
         width: auto;
-        }   
-        
-        
+    }
+
+
     .container-footer {
         display: inline-block;
         margin-left: 0px;
@@ -1490,12 +1490,12 @@ element {}
         padding: 0;
     }
 
-        
+
     .container-footer-media {
         display: inline-block;
         margin-right: 80px;
         width: auto;
-        }
+    }
 
     .footer-logo {
         display: flex;
@@ -1505,14 +1505,14 @@ element {}
     }
 
     .text-footer-media {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #fff;
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: flex-start;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .container-footer-subscribe {
@@ -1540,19 +1540,20 @@ element {}
     .container-footer-subscribe {
         display: flex;
         flex-direction: column;
-        width: 453px; /* 264px input + 165px button + 24px gap */
-}
+        width: 453px;
+        /* 264px input + 165px button + 24px gap */
+    }
 
-.form-footer {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;
-}
+    .form-footer {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+    }
 
-.text-footer-subscribe {
-    display: flex;
-}
+    .text-footer-subscribe {
+        display: flex;
+    }
 
 
 }
