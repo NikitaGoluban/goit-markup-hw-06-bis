@@ -899,7 +899,7 @@ element {}
 /* -------Menu only mobile version -------- */
 
 @media (min-width: 320px) and (max-width: 767px) {
-    .phonemoobilehiding {
+    .mobile-menu-overlay {
         position: fixed;
         top: 0;
         left: 0;
@@ -913,7 +913,7 @@ element {}
         transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
     }
 
-    .phonemoobilehiding.is-open {
+    .mobile-menu-overlay.is-open {
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
@@ -964,19 +964,7 @@ element {}
 
    
 
-    .phonemoobilehiding {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(46, 47, 66, 0.4);
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
-    }
+    
 
     
 
