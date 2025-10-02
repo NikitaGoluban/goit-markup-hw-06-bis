@@ -899,65 +899,65 @@ element {}
 /* -------Menu only mobile version -------- */
 
 @media (min-width: 320px) and (max-width: 767px) {
+/* menu hided */
+/* overlay domyślnie ukryte */
     .mobile-menu-overlay {
         position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9999;
+        inset: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(46, 47, 66, 0.4);
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+        background: #fff;
+        /* pełne białe tło */
+        z-index: 9999;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 48px 32px;
+        box-sizing: border-box;
     }
 
+    /* stan otwarty */
     .mobile-menu-overlay.is-open {
-        opacity: 1;
-        pointer-events: auto;
-        visibility: visible;
+        display: flex;
     }
 
-    .phonem-button-close {
+    /* przycisk zamykania */
+    .mobile-menu-close {
         position: absolute;
-        top: 24px;
-        right: 24px;
-        border-radius: 50%;
-        fill: #2e2f42;
-        stroke-width: 1px;
-        stroke: rgba(0, 0, 0, 0.1);
-        background-color: #e7e9fc;
+        top: 16px;
+        right: 16px;
+        background: #e7e9fc;
         border: 1px solid rgba(0, 0, 0, 0.1);
-        width: 24px;
-        height: 24px;
-        display: inline-flex;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0;
         cursor: pointer;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
 
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 64px;
+    }
 
-    
-    
-    .phone-m {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        border-radius: 4px;
-        width: 288px;
-        min-height: 623px;
-        background-color: #fcfcfc;
-        transform: translate(-50%, -50%);
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-            0 1px 3px 0 rgba(0, 0, 0, 0.12),
-            0 2px 1px 0 rgba(0, 0, 0, 0.2);
-        padding: 72px 16px 24px 16px;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .mobile-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 16px;
+        margin-top: auto;
+        margin-bottom: 24px;
+    }
+
+    .mobile-social {
+        display: flex;
+        gap: 16px;
     }
 
     
