@@ -895,11 +895,41 @@ element {}
 
 
 
+/* -------Menu only mobile version -------- */
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* ==========-------------------- TABLET STYLES -----------------------------------(768px+) ========== */
-
 
 @media (min-width: 768px) and (max-width: 1157px) {
 
@@ -1033,8 +1063,8 @@ element {}
             url(../images/img-name@2x.jpg);
         min-width: 768px;
         padding: 112px 0;
-        margin-left: auto;
-        margin-right: auto;
+        padding-left: auto;
+        padding-right: auto;
         margin-bottom: 0;
     }
 
@@ -1045,8 +1075,8 @@ element {}
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
-        margin: 0 auto 36px;
-        max-width: 494px;
+        margin: 0 auto 12px;
+        width: 494px;
     }
 
 
