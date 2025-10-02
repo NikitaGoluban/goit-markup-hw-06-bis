@@ -416,6 +416,9 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Modal window -->
     <div class="modal-overlay">
         <div class="modal">
             <button type="button" class="modal-button-close">
@@ -481,69 +484,55 @@
     </div>
 
 
-    <div class="modal-overlay is-open">
-        <div class="modal">
-            <button type="button" class="modal-button-close">
+<!-- Menu for mobile -->
+<!-- Overlay + menu mobile -->
+<div class="phonemoobilehiding is-open">
+    <section class="mobile-menu">
+        <div class="phone-m">
+            <button type="button" class="phonem-button-close">
                 <svg class="icon-close" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <p class="text-modal">Leave your contacts and we will call back</p>
-            <form class="form-modal">
-                <div class="form-wrapper">
-                    <label class="form-label" for="user-name">Name</label>
-                    <div class="form-cont-input">
-                        <input class="form-input" id="user-name" type="text" name="user-name" />
-                        <svg class="form-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-person"></use>
-                        </svg>
-                    </div>
-                </div>
-    
-                <div class="form-wrapper">
-                    <label class="form-label" for="user-tel">Phone</label>
-                    <div class="form-cont-input">
-                        <input class="form-input" id="user-tel" type="tel" name="tel" />
-                        <svg class="form-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                    </div>
-                </div>
-    
-                <div class="form-wrapper">
-                    <label class="form-label" for="user-email">Email</label>
-                    <div class="form-cont-input">
-                        <input class="form-input" id="user-email" type="email" name="email" />
-                        <svg class="form-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-email"></use>
-                        </svg>
-                    </div>
-                </div>
-    
-                <div class="form-wrapper-comment">
-                    <label class="form-label" for="user-comment">Comment</label>
-                    <textarea class="modal-textarea" id="user-comment" name="user-comment"
-                        placeholder="Text input"></textarea>
-                </div>
-    
-                <div class="model-cont-checkbox">
-                    <input type="checkbox" id="user-privacy" value="true" name="user-privacy"
-                        class="input-checkbox visually-hidden" />
-                    <label for="user-privacy" class="label-checkbox">
-                        <span class="custom-checkbox">
-                            <svg class="checkbox-icon" width="10" height="8">
-                                <use href="./images/icons.svg#icon-vector"></use>
-                            </svg>
-                        </span>
-                        I accept the terms and conditions of the
-                        <a class="private-policy" href="">Privacy Policy</a>
-                    </label>
-                </div>
-    
-                <button class="button-modal-submit" type="submit">Send</button>
-            </form>
+            <div class="mphone">
+                <ul>
+                    <li>Studio</li>
+                    <li>Portfolio</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+            <div class="phonecontacts">
+                <ul class="contacts-lists">
+                    <li class="mcont">
+                        <a class="mlink" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="mcont">
+                        <a class="mlink" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="phonesociallinks">
+                <ul class="social-links-list">
+                    <li><a href="#" class="social-link"><svg class="social-links-svg" width="16" height="16">
+                                <use href="./images/socialmedia.svg#icon-instagram"></use>
+                            </svg></a></li>
+                    <li><a href="#" class="social-link"><svg class="social-links-svg" width="16" height="16">
+                                <use href="./images/socialmedia.svg#icon-twitter"></use>
+                            </svg></a></li>
+                    <li><a href="#" class="social-link"><svg class="social-links-svg" width="16" height="16">
+                                <use href="./images/socialmedia.svg#icon-facebook"></use>
+                            </svg></a></li>
+                    <li><a href="#" class="social-link"><svg class="social-links-svg" width="16" height="16">
+                                <use href="./images/socialmedia.svg#icon-linkedin"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </section>
+</div>
+
+
+    
 </body>
 
 </html>
