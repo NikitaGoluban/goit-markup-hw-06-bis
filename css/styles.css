@@ -1,7 +1,22 @@
 /* ======================== RESET & GLOBAL STYLES ============================= */
 /* these apply everywhere */
 
+/* ======================== RESET & GLOBAL STYLES ============================= */
+/* these apply everywhere */
 
+/* 🎨 Global variables */
+:root {
+    --navy-blue: #2e2f42;
+    --ocean: #404bbf;
+    --cornflower: #e7e9fc;
+    --slate: #434455;
+    --cloud: #f4f4fd;
+    --iris: #4d5ae5;
+    --white: #ffffff;
+
+    --font-family: "Roboto", sans-serif;
+    --font-family-alt: "Raleway", sans-serif;
+}
 
 /* Set base font, text color, and background for the whole page */
 body {
@@ -9,6 +24,7 @@ body {
     color: #434455;
     background-color: #fff;
 }
+
 
 /* Remove default margin from all headings and paragraphs */
 h1,
@@ -653,7 +669,7 @@ element {}
     /* 🔥 odstęp między inputem a przyciskiem */
 }
 
-/* -------------mobile modal window ----------- */
+/* ------------------------------mobile modal window ----------- */
 
 .modal-overlay {
     position: fixed;
@@ -900,7 +916,7 @@ element {}
 
 @media (min-width: 320px) and (max-width: 767px) {
 /* menu hided */
-/* overlay domyślnie ukryte */
+/* overlay normally is hiding */
     .mobile-menu-overlay {
         position: fixed;
         inset: 0;
@@ -924,27 +940,78 @@ element {}
     /* przycisk zamykania */
     .mobile-menu-close {
         position: absolute;
-        top: 16px;
-        right: 16px;
-        background: #e7e9fc;
+        top: 24px;
+        right: 24px;
+        border-radius: 100%;
+        fill: #2e2f42;
+        stroke-width: 1px;
+        stroke: rgba(0, 0, 0, 0.1);
+        fill: var(--cornflower);
+        background-color: var(--cornflower);
         border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
-        width: 32px;
-        height: 32px;
-        display: flex;
+        width: 24px;
+        height: 24px;
+        display: inline-flex;
         justify-content: center;
         align-items: center;
+        padding: 0;
         cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        
+        
     }
 
-    .mobile-nav ul {
+    .mobile-nav {
+        width: 151px;
+        height: 200px;
+        margin-top: 72px;
+        margin-left: 16px;
+
+    }
+
+    .menumobilelist {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        row-gap: 40px;
+        
+    }
+    .abc {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
+        letter-spacing: 0.02em;
+        color: var(--ocean);
+    }
+
+    .cde {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
+        letter-spacing: 0.02em;
+        color: var(--navy-blue);
+    }
+
+   
+
+
+
+    /* .mobile-nav ul {
+        display: flex;
+        width: 151px;
+        height: 200px;
         flex-direction: column;
         gap: 24px;
         font-size: 24px;
         font-weight: 700;
         margin-top: 64px;
-    }
+    } */
 
     .mobile-contacts {
         display: flex;
