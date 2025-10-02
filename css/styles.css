@@ -928,7 +928,6 @@ element {}
         display: none;
         flex-direction: column;
         justify-content: space-between;
-        padding: 48px 32px;
         box-sizing: border-box;
     }
 
@@ -998,6 +997,20 @@ element {}
         color: var(--navy-blue);
     }
 
+    .m31 {
+        display: inline-flex;
+        flex-direction: row;
+        width: 280px;
+        height: 40px;
+        gap: 40px;
+        margin-left: 16px;
+        margin-right: 24px;
+        margin-bottom: 40px;
+
+    }
+
+
+
    
 
 
@@ -1013,19 +1026,23 @@ element {}
         margin-top: 64px;
     } */
 
-    .mobile-contacts {
+    .s50 {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        margin-left: 16px;
+        margin-bottom: 48px;
+        gap: 24px;
         font-size: 16px;
         margin-top: auto;
         margin-bottom: 24px;
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.02em
     }
 
-    .mobile-social {
-        display: flex;
-        gap: 16px;
-    }
+    
 
     
 
